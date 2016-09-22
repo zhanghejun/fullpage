@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.js"></script>
+</head>
+<body>
+<div class="neirong">
+    <ul>
+        <li class="li1"><a href="">Home</a></li>
+        <li class="li2"><a href="">Services</a></li>
+        <li class="li3"><a href="">R3 Dashboard</a></li>
+        <li class="li4"><a href="">Case-Danish Golf Union</a></li>
+        <li class="li5"><a href="">Contact</a></li>
+    </ul>
+</div>
+<div class="rzi">
+    <div class="left">Dansk</div>
+    <div class="right"></div>
+</div>
+  <div id="fullpage">
+      <div class="section">
+        <div class="container-fluid one" >
+            <div class="container">
+                <h2>Measurable results.</h2>
+                <h2>Based in the data.</h2>
+                <h2>Rooted in reality.</h2>
+            </div>
+            <div class="scrool">
+                <span>scroll</span>
+                <div class="xiahua"></div>
+            </div>
+        </div>
+      </div>
+      <div class="section">
+          <div class="container-fluid two">
+              <div class="container">
+              <div class="img"></div>
+                  <div class="zi">
+                      <p class="one">A UNIQUE APPROACH TO CLASSICAL ANALYSIS</p>
+                      <p class="two">We want to raise the bar</p>
+                      <p class="three">Raw Milk helps companies design and implement Customer Experience Management. We create customer experiences that are consistent and differentiated. That build loyalty. That create ambassadors.</p>
+                      <p class="three">Based on your current situation and ambitions, we design unique solutions. Solutions, that are strategically founded, embedded into your organization, and that will be appreciated by your customers.</p>
+                      <p class="three">When you’re dealing with Raw Milk, you’re dealing with the best there is. Our expertise is wide ranging and we design full-service solutions all the way from idea to implementation.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <div class="container-fluid three">
+              <div class="container">
+                  <div class="img"></div>
+                  <div class="zi">
+                      <p class="one">CUSTOMER EXPERIENCES - EXPERIENCED REAL-TIME</p>
+                      <p class="two">CEM-strategy operationalized</p>
+                      <p class="three">Get your results online and in real-time with our user friendly R3 dashboard – the most intelligent and intuitive dashboard on the market. R3 has been specifically designed to anchor customer surveys within organizations. Collect all your customer analyses in one simple tool and make them accessible across your organization with differentiated rights management.</p>
+                      <p class="four">Contact us and let us demonstrate R3 using key figures from your own company.</p>
+                      <div class="five">
+                          <form>
+                              <div class="form-group">
+                                  <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Your name">
+                              </div>
+                              <div class="form-group">
+                                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Your email">
+                              </div>
+                              <button type="submit" class="btn btn-default">send</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <div class="container-fluid four">
+              <div class="container">
+                  <p class="one">Players 1st</p>
+                  <p class="two">Together, The Danish Golf Union and Raw Milk have launched the most ambitious Customer Experience Management program in Danish sports so far. The program is called ´Players 1st´.</p>
+                  <p class="two">The aim is to optimize the ability to run a healthy golf club in Denmark. The mean is to optimize both the club members’ and guests’ experiences when visiting golf clubs and in doing so increasing their loyalty and making them into club ambassadors.</p>
+                  <p class="two ge">The Players 1st program consists of two parts, equally important. Firstly, there is a data collection system, that presents knowledge and results in a tailor-made online-dashboard. Secondly, there is a training program that teaches the clubs to turn the obtained knowledge and results into everyday actions.</p>
+
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <div class="container-fluid five">
+              <div class="container">
+                  <p class="one">Do you have ambitions for greater customer loyalty?</p>
+                  <p class="two">If so, we would like to welcome you at Raw Milk. Whether you
+                  <br>need strategic counseling on Customer Experience
+                      <br>Management or the design of a Voice of the Customer
+                      <br>program, we are here to help.
+                  </p>
+                  <p class="three">
+                      We are experts at identifying and extracting unfulfilled
+                      <br>potential with your customers and in clarifying drivers and <br>
+                      barriers that affect customer loyalty.
+                  </p>
+                  <p class="four">
+                      Raw Milk
+                      <br>Søndergade 66B<br>8000 Aarhus C
+                  </p>
+                  <p class="five">
+                      Tlf: +45 6076 6920
+                      <br>E-mail: mail@rawmilk.dk
+                  </p>
+                  <div class="bottom">
+                      <div class="left"></div>
+                      <div class="right"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('#fullpage').fullpage({
+            verticalCentered:false,
+            navigation:true,
+            navigationPosition:'left'
+        });
+       $('#fp-nav.left').on('mouseover',function(){
+           $('.neirong').addClass('chu')
+                   .delay(2000)
+                   .queue(function(){
+                       $('.neirong').removeClass('chu')
+                               .dequeue()
+                   })
+       })
+    })
+</script>
